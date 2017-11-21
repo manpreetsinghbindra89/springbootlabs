@@ -1,0 +1,201 @@
+ES6:
+
+1) Template String
+2) Fat Arrow Function
+3) destructing (object, array)
+3) Map 
+4) Set
+5) Promise
+
+
+TypeScript is superset of JavaScript
+
+npm install -g typescript
+
+tsc  (.ts -> .js)
+
+DataTypes of TS:
+
+1) number
+2) string
+3) boolean
+4) any
+5) enum
+6) Array
+7) void
+
+Features of TypeScript:
+1) static typings
+2) Class & Objects
+3) Inheritance 
+- extends
+- Interface - implements
+4) Generics
+5) Union Types
+6) Module Loader
+
+
+
+-------------------------------------
+
+Create a class Product 
+- with attributes
+	id?: number
+	name?: string
+	category?: string
+	description?: string
+	price?: number
+
+Create a class ProductRepository implements IProductRepository
+- with attribute 
+	Array<Product>
+- with Behaviour 
+	- addProduct(product : Product) : void
+	- updateProduct(product : Product) : void
+	- deleteProduct(pid:number) : void
+   	- getProductById(pid:number) : Product
+	- getProducts() : Array<Product>
+
+Test :
+Create few Product objects, add it inside ProductRepository 
+Test updateProduct,  deleteProduct,  getProductById, getProducts also
+
+-----------------------------------------
+
+
+AngularJS
+
+angularjs.org - 1	- web
+angularjs.io   - 2, 4, 5 - web & mobile
+
+MVC
+
+Features of Angular 2
+1) Two-Way Data Binding
+2) Powerful Routing Support
+3) Expressive HTML
+4) Modular by Design
+5) Built in Back End Support (Database, Log, WebService)
+6) Active Community
+	
+
+Key differences between Angular 1 & Angular 2
+1) Support for ES6
+2) Components are new controllers
+3) Directives *ngFor
+4) Data Bindings
+5) $scopes are out
+6) Filters are renamed to Pipes
+7) Platform specific Bootstrap
+8) Services  - Factory, Abstract Factory, Utilities, Singleton
+9) Mobile Support
+
+
+
+Angular Architecture:
+
+Root Component
+Service
+Directive
+
+
+class TaskComponent {
+......
+}
+
+The class Decorator
+
+1) @NgModule
+2) @Component
+3) @Injectable
+4) @Directive
+5) @Pipe 
+
+
+Data Binding
+
+1. Interpolation
+Data is bind from component to View
+{{}}
+2. Property Binding  (One way binding)
+Data is bind from component to property of an HTML control in the view like
+[]
+3. Event Binding
+The DOM Events are bind from View to a method in the Component
+()
+4. Two-way Binding/Model Binding - banana in a box
+The data flows in both directions from view to component or from component to view
+[(ngModel)]
+
+
+Installing and Getting started with Angular 2
+
+Install Angular CLI:
+npm install -g @angular/cli
+
+Angular CLI version:
+ng -v
+
+Create new Project:
+ng new storeapp
+
+cd storeapp
+
+Install the dependencies:
+npm install
+
+package.json:
+scripts
+dependencies
+devDependencies
+
+Start the Server: (js,html,css,sass,... in memory)
+ng serve
+ng serve --prod
+
+http://localhost:4200
+
+
+js,html,css,sass... files: 
+ng build   
+
+dist folder
+
+-----------------------------------------------------------------
+
+
+package.json :
+dependencies
+
+
+tsconfig.json:
+tsc compiler argument
+
+
+karma.conf.js:
+Karma
+
+
+lint: (ng lint)
+static code analyzer - typescript
+
+.angular-cli.json  
+
+index.html, main.ts
+
+
+-------------------------------------------------------------
+
+
+
+The class Decorator
+
+1) @NgModule
+2) @Component
+3) @Injectable
+4) @Directive
+5) @Pipe 
+
+
+
+
