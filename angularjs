@@ -36,7 +36,40 @@ Features of TypeScript:
 
 
 
--------------------------------------
+
+
+AngularJS
+
+angularjs.org - 1	- web
+angularjs.io   - 2, 4, 5 - web & mobile
+
+MVC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------
 
 Create a class Product 
 - with attributes
@@ -62,14 +95,6 @@ Test updateProduct,  deleteProduct,  getProductById, getProducts also
 
 -----------------------------------------
 
-
-AngularJS
-
-angularjs.org - 1	- web
-angularjs.io   - 2, 4, 5 - web & mobile
-
-MVC
-
 Features of Angular 2
 1) Two-Way Data Binding
 2) Powerful Routing Support
@@ -78,6 +103,15 @@ Features of Angular 2
 5) Built in Back End Support (Database, Log, WebService)
 6) Active Community
 	
+
+
+
+
+
+
+
+
+
 
 Key differences between Angular 1 & Angular 2
 1) Support for ES6
@@ -92,16 +126,46 @@ Key differences between Angular 1 & Angular 2
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 Angular Architecture:
 
-Root Component
+Component
 Service
 Directive
+
+
 
 
 class TaskComponent {
 ......
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 The class Decorator
 
@@ -110,6 +174,7 @@ The class Decorator
 3) @Injectable
 4) @Directive
 5) @Pipe 
+
 
 
 Data Binding
@@ -126,6 +191,11 @@ The DOM Events are bind from View to a method in the Component
 4. Two-way Binding/Model Binding - banana in a box
 The data flows in both directions from view to component or from component to view
 [(ngModel)]
+
+
+
+WebPack - requirejs
+Gulp -  commonjs
 
 
 Installing and Getting started with Angular 2
@@ -186,16 +256,78 @@ index.html, main.ts
 
 -------------------------------------------------------------
 
+.angular-cli.json:
+
+index.html
+
+main.ts  --->
+
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+platformBrowserDynamic().bootstrapModule(AppModule);
+
+AppModule
+
+AppComponent
+
+app.component.html
+app.component.css
 
 
-The class Decorator
+The Class Decorator
 
 1) @NgModule
+
+declarations
+// Components, Directives, Pipes
+
+imports
+// BrowserModule
++ user defined module
+
+providers
+Service
+// Service - singleton
+// Dependency Injection
+
+bootstrap
+// Component
+
+exports - reuse components
+
+Two Type of Module:
+1) Root Module
+2) Feature Module
+
+--------------
+
 2) @Component
-3) @Injectable
+
+- selector 		- string 	 - <store>
+- templateUrl	- string	 - .html
+- styleUrls		- string[]	 - .css
+- template		- string
+- styles		- string[]
+
+
+--------------
+
+3) @Injectable()
+
+--------------
+
 4) @Directive
-5) @Pipe 
 
+- selector 		- string  
 
+Build-in directive:
+*ngFor, *ngIf, *ngIf else, *ngSwitch
+--------------
 
+5) @Pipes
+
+- implements PipeTransform
+
+--------------
+-------------------------------------------------------------
 
