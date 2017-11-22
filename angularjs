@@ -330,4 +330,22 @@ Build-in directive:
 
 --------------
 -------------------------------------------------------------
+RouteModule.for
 
+ProductComponent		/product
+CartDetailsComponent	/cart
+CheckoutComponent		/checkout
+
+
+
+AppComponent
+- template: "<router-outlet></router-outlet>"
+
+
+Programmatic
+private router : Router
+ this.router.navigateByUrl("/cart");
+
+Declarative
+routerLink=""  - RouteModule
+---------------------------------------------------------------------------------
