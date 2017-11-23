@@ -351,8 +351,6 @@ routerLink=""  - RouteModule
 ---------------------------------------------------------------------------------
 
 
-https://goo.gl/SFs8PG
-
 data.js
 
  "devDependencies": {
@@ -378,4 +376,4 @@ npm run json
 /orders/id  		PUT  - UPDATE - application/json
 /orders/1		DELETE
 
-
+---------------------------------------------------------------------------------
