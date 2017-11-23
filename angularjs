@@ -349,3 +349,33 @@ private router : Router
 Declarative
 routerLink=""  - RouteModule
 ---------------------------------------------------------------------------------
+
+
+https://goo.gl/SFs8PG
+
+data.js
+
+ "devDependencies": {
+     "json-server": "0.12.1"
+  }
+
+"scripts" : { "json" : "json-server data.js -p 3500" }
+
+npm install
+npm run json
+
+
+
+/products  		GET
+/products/1 	GET
+/products  		POST  - INSERT - application/json
+/products/id  	PUT  - UPDATE - application/json
+/products/1	DELETE
+
+/orders		GET
+/orders/1 		GET
+/orders		POST  - INSERT - application/json
+/orders/id  		PUT  - UPDATE - application/json
+/orders/1		DELETE
+
+
